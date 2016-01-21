@@ -1,0 +1,62 @@
+.main{
+    display:block;
+    position:relative;
+    width: 980px;
+    margin: 0 auto;
+}
+.cover{
+    display:block;
+    position:relative;
+    height:437px;
+    overflow:hidden;
+    z-index:1;
+}
+.cover img{
+   max-width:100%;
+    z-index:1;
+}
+.profile{
+   display:block;
+    position:relative;
+    border:#d0efff solid 3px;
+    border-radius:5px;
+    width:200px;
+    height:200px;
+    margin: -250px 0 10px 20px;
+    z-index:999;
+}
+.profile img{
+   max-width:100%;
+    z-index:999;
+    float: right;
+}
+
+.name{
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    margin-top: -29%;
+}
+.textBox{
+    font-family: monospace;
+    text-align:justify;
+    display: block;
+    position: absolute;
+    border:#d0efff solid 3px;
+    border-radius:5px;
+    width:450px;
+    padding: 10px;
+    
+}
+
+.textBox2 {
+    font-family: monospace;
+    text-align:justify;
+    display: block;
+    position: absolute;
+    margin-left: 515px;
+    border:#d0efff solid 3px;
+    border-radius:5px;
+    width:450px;
+    padding: 10px;
+}
