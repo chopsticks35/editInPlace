@@ -1,7 +1,13 @@
+body,
+html {
+    background-color: #ccc; ;
+}
+
 .main{
     display:block;
     position:relative;
     width: 980px;
+    padding-top: 3%;
     margin: 0 auto;
 }
 .cover{
@@ -16,17 +22,17 @@
     z-index:1;
 }
 .profile{
-   display:block;
+    display:inline-block;
     position:relative;
     border:#d0efff solid 3px;
     border-radius:5px;
     width:200px;
     height:200px;
-    margin: -250px 0 10px 20px;
+    margin: -260px 0 10px 20px;
     z-index:999;
 }
 .profile img{
-   max-width:100%;
+    max-width:100%;
     z-index:999;
     float: right;
 }
@@ -34,29 +40,25 @@
 .name{
     text-align: center;
     font-family: monospace;
-    font-size: 25px;
-    margin-top: -29%;
-}
-.textBox{
-    font-family: monospace;
-    text-align:justify;
-    display: block;
-    position: absolute;
-    border:#d0efff solid 3px;
-    border-radius:5px;
-    width:450px;
-    padding: 10px;
-    
+    font-size: 40px;
+    margin-top: -10%;
 }
 
-.textBox2 {
+.textBox{
     font-family: monospace;
-    text-align:justify;
-    display: block;
-    position: absolute;
-    margin-left: 515px;
+    display: inline-block;
     border:#d0efff solid 3px;
     border-radius:5px;
-    width:450px;
+    width:20%;
     padding: 10px;
+    overflow: hidden;
+    float:left;
+    text-align: justify;
+    object-position: relative;
+    margin-top: 5%;
+    margin-left: 2%;
+    background-color: #fff;  
 }
+
+@media
+
