@@ -1,27 +1,36 @@
-angular.module('myApp', []);
+angular.module("myApp",[]);
 
 angular.module('myApp')
-        
-        .controller('myController', ['$scope', function($scope) {
+        .controller("myController",["$scope",function($scope){
+
+	$scope.myName="Ti";
+	$scope.myBirthday="May 22";
+	$scope.myLocation="Denver";
             
-            $scope.textBox1 = "Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had."
-            
-            $scope.showText1 = true
-            
-            $scope.clickText = function(event, which) {
-			if(which === 'first') {
-				$scope.showText1 = !$scope.showText1
-				$scope.showInput1 = !$scope.showInput1
-		          }   
-            }
-            
-            $scope.showInput1 = false
-                
-            $scope.switchDisplay = function(event, which) {
-			     if(which === 'first') {
-				    $scope.showInput1 = !$scope.showInput1
-				    $scope.showText1 = !$scope.showText1
-				    $scope.textBox1 = $scope.newText1
-			     }
-            }
-        }])
+
+	$scope.attributeArray = [];
+	$scope.showIt =[true,true,true];
+
+	$scope.mouseAway = function(num){
+
+		$scope.showIt[num]=true;
+	}
+
+	$scope.click = function(num){
+		$scope.fillTrue();
+		$scope.showIt[num]=false;
+	}
+
+	$scope.fillTrue = function(){
+		for (i=0;i<$scope.attributeArray.length;i++){
+			$scope.showIt[i]=true;
+		}
+	}
+    
+//    $timeout(function(){
+//        attributArray.push(){
+//            myJob: "Yoga Teacher";
+//        }
+    
+//    })
+}])

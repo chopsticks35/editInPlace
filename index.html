@@ -18,6 +18,19 @@
     </div>
         <h1 class="name"><p class="boxed">Ti Wegmeyer</p></h1>
         </div> 
+
+    <div class="container">
+			<div class="four columns portfolio">NAME:<span ng-show="showIt[0]" class="textBox" ng-click="click(0)" >{{myName}}</span>
+				<input ng-model="myName" ng-blur="mouseAway(0)" ng-hide="showIt[0]" class="enter" type="text" value="{{myName}}"/></div><br>
+
+			<div class="four columns portfolio" >BIRTHDAY: <span ng-show="showIt[1]" class="textBox" ng-click="click(1)" >{{myBirthday}}</span>
+				<input ng-model="myAge" ng-blur="mouseAway(1)" ng-hide="showIt[1]" class="enter" type="text" value="{{myBirthday}}"/></div><br>
+
+			<div class="four columns portfolio">LOCATION: <span ng-show="showIt[2]" class="textBox" ng-click="click(2)" >{{myLocation}}</span>
+				<input ng-model="myLocation" ng-blur="mouseAway(2)" ng-hide="showIt[2]" class="enter" type="text" value="{{myLocation}}"/></div><br>
+		</div>
+    </body>
+    <!--
     <div class="container">
             <div class="row">
         <div class="four columns portfolio">
@@ -34,6 +47,5 @@
                 Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
         </div>
         </div>
-    </body>
+-->
 </html>
-    
