@@ -8,7 +8,6 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </head>
-    
     <body ng-controller="myController">
         <div class="main">
     <div class="cover">
@@ -22,15 +21,15 @@
     <div class="container">
             <div class="row">
         <div class="four columns portfolio">
-            <p class="textBox"><strong class="title">Profile</strong><br>
+            <p class="textBox" ng-click="inputHide($event)"><strong class="title">Profile</strong><br>
                 Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
         </div>
         <div class="four columns portfolio">
-            <p class="textBox"><strong class="title">Profile</strong><br>
+            <p class="textBox" ng-click="inputHide($event)"><strong class="title">Profile</strong><br>
                 Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
         </div>
         <div class="four columns portfolio">
-            <p class="textBox"><strong class="title">Profile</strong><br>
+            <p class="textBox" ng-hide="inputHide($event)"><strong class="title">Profile</strong><br>
                 Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
         </div>
         </div>
