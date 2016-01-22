@@ -20,18 +20,20 @@
         </div> 
     <div class="container">
             <div class="row">
-        <div class="four columns portfolio" ng-click="inputHide()">
+        <div class="four columns portfolio">
+            <p class="textBox" ng-show="showText1" ng-click="clickText($event, 'first')" ng-bind="currentText1"><br></p>
+            <input class="content-input" ng-show="showInput1" ng-model="newText1">
+			<input type="submit" ng-click="switchDisplay($event, 'first')" ng-show="showInput1">
+        </div>
+        <div class="four columns portfolio" ng-click="inputHide(); inputDisplay()">
             <p class="textBox" ng-show="visible"><strong class="title">Profile</strong><br>
                 Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
         </div>
-        <div class="four columns portfolio" ng-click="inputHide()">
-            <p class="textBox" ng-show="visible"><strong class="title">Profile</strong><br>
-                Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
-        </div>
-        <div class="four columns portfolio" ng-click="inputHide()">
+        <div class="four columns portfolio" ng-click="inputHide(); inputDisplay()">
             <p class="textBox" ng-show="visible"><strong class="title">Profile</strong><br>
                 Well dismally insect aboard raccoon a next contrary the blankly goodness that freely opposite coincidental alas much wherever dear masochistically save spun whimpered and hello a inside this froze had.</p>
         </div>
         </div>
     </body>
 </html>
+    
